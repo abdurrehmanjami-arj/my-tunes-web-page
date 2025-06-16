@@ -132,7 +132,16 @@ html {
   line-height: 30px;
   font-weight: 400;
 }
-
+@media (max-width: 375px) {
+  html {
+    font-size: 30%;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 35%;
+  }
+}
 @media (max-width: 1024px) {
   .hero-text h1,
   .hero-text h2,
@@ -257,7 +266,7 @@ html {
   align-items: center;
 }
 .white-box > div > img {
-  /* padding-top: 10rem; */
+  padding-top: 10rem;
   /* padding-bottom: 8rem; */
   width: 80%;
 }
@@ -291,4 +300,41 @@ html {
 }
 /* The movie and TV collection ended */
 
+.third-last-container {
+  background-image: url("https://mytunes-322.web.app/images/video.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.third-last-container > h3 {
+  font-size: 4rem;
+  text-align: center;
+  padding-top: 30rem;
+}
+.third-last-container > p {
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 25rem;
+}
+@media (max-width: 377px) {
+  .third-last-container > h3 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 533px) {
+  .third-last-container > h3 {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 745px) {
+  .third-last-container > h3 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 1035px) {
+  .third-last-container > h3 {
+    font-size: 4.5rem;
+  }
+}
 /* main container ended */
