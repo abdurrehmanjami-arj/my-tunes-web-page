@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+:root {
+  --text-color: #ffffff;
+  --background-color: #281154;
+  --red-btn-color: #ff0000;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+
+/* navbar container started */
+.navbar-container {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+}
+.logo {
+  font-family: "Roboto", sans-serif;
+  font-size: 4rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 5rem;
+  list-style: none;
+  justify-content: start;
+  padding: 1rem;
+  margin-right: 20px;
+}
+.nav-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 4rem;
+  font-family: "Josefin Sans", sans-serif;
+}
+.menu-bar {
+  display: none;
+  font-size: 4rem;
+  cursor: pointer;
+  margin-right: 20px;
+}
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    background-color: var(--background-color);
+  }
+  .menu-bar {
+    display: block;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 40%;
+  }
+  .nav-links a {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 1280px) {
+  html {
+    font-size: 40%;
+  }
+  .nav-links a {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 1536px) {
+  html {
+    font-size: 50%;
+  }
+  .nav-links a {
+    font-size: 3.5rem;
+  }
+}
+
+/* navbar container ended */
+
+/* main container started */
+
+/* hero section started */
+
+.hero-container {
+  position: relative;
+  display: flex;
+}
+.hero-container img {
+  width: 100%;
+  /* opacity: 0.4; */
+}
+.hero-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--text-color);
+}
+.hero-text h1 {
+  font-size: 12rem;
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+.hero-text h2 {
+  font-size: 5rem;
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+.hero-text h3 {
+  font-size: 2.5rem;
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 2rem;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+@media (max-width: 1024px) {
+  .hero-text h1,
+  .hero-text h2,
+  .hero-text h3 {
+    font-size: 3rem;
+    font-family: "Josefin Sans", sans-serif;
+    margin-bottom: 2rem;
+    font-weight: 700;
+  }
+}
+/* hero section ended */
+
+/* Music 45 million songs. Zero ads. started */
+.purple-box {
+  background-color: var(--background-color);
+  padding-bottom: 50rem;
+}
+.purple-box > h2 {
+  font-size: 8rem;
+  text-align: center;
+  padding-top: 10rem;
+  color: var(--text-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+.purple-box > h3 {
+  font-size: 5rem;
+  text-align: center;
+  padding: 4rem;
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color);
+}
+.purple-box > p {
+  font-size: 2rem;
+  text-align: center;
+  padding: 3rem;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 4rem;
+  color: var(--text-color);
+  line-height: 30px;
+}
+
+.purple-box > div {
+  /* display: block; */
+  text-align: center;
+  margin-bottom: 20px;
+}
+.purple-box > div > button {
+  background-color: var(--red-btn-color);
+  padding: 2rem;
+  color: white;
+  font-size: 2.5rem;
+  border: none;
+  border-radius: 20px;
+  font-family: "Josefin Sans", sans-serif;
+}
+.purple-box > div > button:hover {
+  background-color: black;
+  transition: 0.5s;
+  font-size: 3rem;
+}
+.purple-box h4 {
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--text-color);
+  font-weight: 400;
+}
+
+@media (max-width: 1024px) {
+  .purple-box > h2 {
+    font-size: 8rem;
+  }
+  .purple-box > h3 {
+    font-size: 5rem;
+  }
+  .purple-box > p {
+    font-size: 2rem;
+  }
+  .purple-box > div > button {
+    font-size: 2.5rem;
+    padding: 1.5rem;
+  }
+}
+@media (max-width: 1280px) {
+  .purple-box > h2 {
+    font-size: 7rem;
+  }
+  .purple-box > h3 {
+    font-size: 4.5rem;
+  }
+  .purple-box > p {
+    font-size: 1.8rem;
+  }
+  .purple-box > div > button {
+    font-size: 2.2rem;
+    padding: 1.5rem;
+  }
+}
+@media (max-width: 1536px) {
+  .purple-box > h2 {
+    font-size: 6rem;
+  }
+  .purple-box > h3 {
+    font-size: 4rem;
+  }
+  .purple-box > p {
+    font-size: 1.5rem;
+  }
+  .purple-box > div > button {
+    font-size: 2rem;
+    padding: 1.5rem;
+  }
+}
+/* Music 45 million songs. Zero ads. ended */
+
+/* main container ended */
