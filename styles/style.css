@@ -250,4 +250,45 @@ html {
 }
 /* Music 45 million songs. Zero ads. ended */
 
+/* The movie and TV collection started */
+.white-box div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.white-box > div > img {
+  /* padding-top: 10rem; */
+  /* padding-bottom: 8rem; */
+  width: 80%;
+}
+.image-centre {
+  position: relative;
+  bottom: 40rem;
+}
+.white-box > h3 {
+  font-size: 4rem;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500;
+  margin-top: -30rem;
+}
+.white-box > p {
+  font-size: 2rem;
+  text-align: center;
+  padding: 3rem;
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 30px;
+}
+
+.white-box > div > button {
+  background-color: var(--background-color);
+  padding: 1rem;
+  color: var(--text-color);
+  font-size: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+  border: none;
+  border-radius: 20px;
+}
+/* The movie and TV collection ended */
+
 /* main container ended */
