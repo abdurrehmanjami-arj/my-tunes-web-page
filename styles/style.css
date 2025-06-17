@@ -6,6 +6,7 @@
   --text-color: #ffffff;
   --background-color: #270082;
   --red-btn-color: #ff0000;
+  --sub-footer-color: #270082;
 }
 
 * {
@@ -394,3 +395,68 @@ html {
 }
 /* card-container ended */
 /* main container ended */
+
+/* footer started */
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 8rem;
+}
+
+.footer-links > h4 {
+  font-size: 3rem;
+  padding-bottom: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.footer-links ul {
+  padding-top: 2rem;
+}
+
+.footer-links ul li {
+  font-size: 2rem;
+  list-style: none;
+  line-height: 20px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+@media (max-width: 377px) {
+  html {
+    font-size: 20%;
+  }
+}
+@media (max-width: 533px) {
+  html {
+    font-size: 25%;
+  }
+}
+@media (max-width: 745px) {
+  html {
+    font-size: 35%;
+  }
+  .footer {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1035px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* sub-footer started */
+.sub-footer {
+  background-color: var(--sub-footer-color);
+  padding: 2rem;
+}
+.sub-footer > p {
+  font-size: 2rem;
+  color: var(--text-color);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+/* sub-footer ended */
+/* footer ended */
